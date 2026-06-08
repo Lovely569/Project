@@ -1,0 +1,39 @@
+body{
+    background-image: linear-gradient(hsl(320, 48%, 50%), #c65ea3) ;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+    text-align: center;}
+
+header{
+  
+
+    
+}
+h1{
+  
+
+}
+
+hr{
+    height: 5px;
+    width: 2px;
+    margin: 10px;
+    background-color: black;
+
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+}
+#nav a{
+    background-color: red;
+    text-align: center;
+    border: 2px solid black;
+    transition: background-color 2s;
+}
+a:hover{
+    background-color: aliceblue ;
+}

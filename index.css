@@ -1,19 +1,23 @@
 body{
-    background-image: linear-gradient(hsl(320, 48%, 50%), #c65ea3) ;
+    background-image: linear-gradient(#f987eb, #fbacf1) ;
     background-repeat: no-repeat;
     height: 100%;
     margin: 0px;
     width: 100%;
-    text-align: center;}
+    text-align: center;
+    font-family: myFont;
+
+}
+@font-face {
+    font-family: myFont;
+    src: url(Cookiemonster-gv11.ttf);
+
+}
+    
 
 header{
-  
-
-    
 }
 h1{
-  
-
 }
 
 hr{
@@ -29,11 +33,7 @@ hr{
     justify-content: center;
 }
 #nav a{
-    background-color: red;
+    background-color: #f987eb;
     text-align: center;
     border: 2px solid black;
-    transition: background-color 2s;
-}
-a:hover{
-    background-color: aliceblue ;
 }

@@ -49,14 +49,12 @@ hr{
     text-align: center;
     border: 2px solid black;
 }
-a:hover{
-    background-color: aliceblue ;
-}
 
 .portfolios {
     margin-top: 115px;
     display: flex;
     gap: 20px;
+    align-items: start;
 }
 
 .portfolios section {
@@ -72,11 +70,31 @@ a:hover{
 .ani-pf h2 {
     color: rgb(241, 205, 245);
 }
+.harley-pf{
+    background-image: linear-gradient(red,blue);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 28px;
+    color: yellow;
+}
+
+.harley-pf h3{
+    color: yellow;
+}
 
 .ani-pf-content {
     background-color: rgb(245, 228, 248);
     margin: 10px;
     border-radius: 10px;
+}
+.harley-pf-content{
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+
+}
+.harley-pf a{
+    color: red;
 }
 
 .link-parent {

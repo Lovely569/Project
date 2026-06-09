@@ -1,24 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-image: linear-gradient(hsl(320, 48%, 50%), #c65ea3) ;
     background-repeat: no-repeat;
-    height: 100%;
-    margin: 0px;
+    min-height: 100vh;
     width: 100%;
-    text-align: center;}
-
-header{
-  
-
-    
+    text-align: center;
 }
+
+header {
+    background-color: hsl(320, 48%, 50%);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 h1{
   
 
 }
 
 hr{
-    height: 5px;
-    width: 2px;
+    height: 6px;
+    width: 3px;
     margin: 10px;
     background-color: black;
 
@@ -36,4 +49,35 @@ hr{
 }
 a:hover{
     background-color: aliceblue ;
+}
+
+.portfolios {
+    margin-top: 115px;
+    display: flex;
+    gap: 20px;
+}
+
+.portfolios section {
+    flex: 1;
+}
+
+.ani-pf {
+    background-color: purple;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.ani-pf h2 {
+    color: rgb(241, 205, 245);
+}
+
+.ani-pf-content {
+    background-color: rgb(245, 228, 248);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.link-parent {
+    padding: 10px;
+    border: 1px solid purple;
 }

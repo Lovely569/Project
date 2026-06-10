@@ -31,6 +31,11 @@ header {
     flex-direction: column;
     gap: 10px;
 }
+.closeButt{
+    width: max-content;
+    right: 0px;
+}
+
 
 hr{
     height: 6px;
@@ -100,4 +105,8 @@ hr{
 .link-parent {
     padding: 10px;
     border: 1px solid purple;
+}
+#roll a{
+    border: 1px solid black;
+    padding-top: 100px;
 }

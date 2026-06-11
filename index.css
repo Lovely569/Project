@@ -31,11 +31,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.closeButt{
-    width: max-content;
-    right: 0px;
-    font-size: 50px;
+    transition-duration: 0.5s;
 }
 
 
@@ -57,8 +53,24 @@ hr{
     border: 2px solid black;
 }
 
+.closeButt, .dropdown-btn {
+    width: max-content;
+    padding: 5px 7px;
+    background-color: purple;
+    color: #f987eb;
+    border-color: #f987eb;
+    border-radius: 5px;
+}
+
+.dropdown-btn {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    transition-delay: 2s;
+}
+
 .portfolios {
-    margin-top: 115px;
+    margin-top: 130px;
     display: flex;
     gap: 20px;
     align-items: start;
@@ -69,13 +81,19 @@ hr{
     flex: 1;
 }
 
-.ani-pf {
-    background-color: purple;
-    padding: 10px;
-    border-radius: 20px;
+.pf-img {
+    width: 400px;
+    height: 400px;
 }
 
-.ani-pf h2 {
+.ani-pf {
+    background: linear-gradient(rgb(149, 7, 201),rgb(27, 158, 252));;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 28px;
+}
+
+.ani-pf h3 {
     color: rgb(241, 205, 245);
 }
 .harley-pf{
@@ -100,6 +118,19 @@ hr{
     margin: 20px;
 
 }
+
+.harley-pf{
+    background-image: linear-gradient(red,blue);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 28px;
+    color: yellow;
+}
+
+.harley-pf h3{
+    color: yellow;
+}
+
 .harley-pf a{
 }
 
@@ -107,6 +138,7 @@ hr{
     padding: 10px;
     border: 1px solid purple;
 }
+
 #roll a{
     border: 1px solid black;
     padding-top: 100px;

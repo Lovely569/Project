@@ -16,7 +16,7 @@ body{
 }
 @font-face {
     font-family: myFont;
-    src: url('style/Cookiemonster-gv11.ttf');
+    src: url('style/CutiePatootie-Rgjv.ttf');
 
 }
     
@@ -62,6 +62,7 @@ hr{
     display: flex;
     gap: 20px;
     align-items: start;
+    padding: 20px;
 }
 
 .portfolios section {
@@ -78,15 +79,14 @@ hr{
     color: rgb(241, 205, 245);
 }
 .harley-pf{
-    background-image: linear-gradient(red,blue);
+    color:rgb(245, 228, 248);
+    background-color: purple;
     border-radius: 15px;
     text-align: center;
     font-size: 28px;
-    color: yellow;
 }
 
 .harley-pf h3{
-    color: yellow;
 }
 
 .ani-pf-content {
@@ -101,7 +101,6 @@ hr{
 
 }
 .harley-pf a{
-    color: red;
 }
 
 .link-parent {

@@ -11,11 +11,12 @@ body{
     width: 100%;
     text-align: center;
     font-family: myFont;
+    cursor: url('style/cur265.cur'),auto;
 
 }
 @font-face {
     font-family: myFont;
-    src: url(Cookiemonster-gv11.ttf);
+    src: url('style/Cookiemonster-gv11.ttf');
 
 }
     
@@ -32,8 +33,6 @@ header {
     gap: 10px;
     transition-duration: 0.5s;
 }
-
-
 
 
 hr{
@@ -103,7 +102,7 @@ hr{
     border-radius: 10px;
 }
 .harley-pf-content{
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
     margin: 20px;
 

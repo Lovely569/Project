@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(#f987eb, #fbacf1) ;
+    background-image: linear-gradient( #fbacf1,#faa3f0,#f86de7) ;
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
@@ -22,7 +22,7 @@ body{
     
 
 header {
-    background-color: hsl(320, 48%, 50%);
+    background-image: linear-gradient(#c4569f,#bd4294);
     padding: 15px;
     position: fixed;
     top: 0;
@@ -35,14 +35,6 @@ header {
 }
 
 
-hr{
-    height: 6px;
-    width: 3px;
-    margin: 10px;
-    background-color: black;
-
-}
-
 #nav{
     display: flex;
     justify-content: center;
@@ -50,7 +42,8 @@ hr{
 #nav a{
     background-color: #f987eb;
     text-align: center;
-    border: 2px solid black;
+    border-left: 2px solid black;
+    padding: 5px;
 }
 
 .closeButt, .dropdown-btn {
@@ -97,14 +90,12 @@ hr{
     color: rgb(241, 205, 245);
 }
 .harley-pf{
+    background-image: linear-gradient(#ff8585,#7979ff);
     color:rgb(245, 228, 248);
     background-color: purple;
     border-radius: 15px;
     text-align: center;
     font-size: 28px;
-}
-
-.harley-pf h3{
 }
 
 .ani-pf-content {
@@ -119,19 +110,12 @@ hr{
 
 }
 
-.harley-pf{
-    background-image: linear-gradient(red,blue);
-    border-radius: 15px;
-    text-align: center;
-    font-size: 28px;
-    color: yellow;
-}
-
 .harley-pf h3{
-    color: yellow;
+    color: #ffff79;
 }
 
 .harley-pf a{
+    color: #ff8585;
 }
 
 .link-parent {

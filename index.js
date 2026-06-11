@@ -12,3 +12,6 @@ dropdownBtn.addEventListener("click", ()=> {
     dropdownBtn.style.display = "none";
 })
 
+
+var audio = document.getElementById("addicted");
+audio.volume = 0.5;

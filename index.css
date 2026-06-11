@@ -19,7 +19,7 @@ body{
     src: url('style/CutiePatootie-Rgjv.ttf');
 
 }
-    
+
 
 header {
     background-image: linear-gradient(#c4569f,#bd4294);
@@ -104,9 +104,10 @@ header {
     border-radius: 10px;
 }
 .harley-pf-content{
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: white;
     margin: 20px;
+    outline-offset: 0;
 
 }
 
@@ -120,7 +121,6 @@ header {
 
 .link-parent {
     padding: 10px;
-    border: 1px solid purple;
 }
 
 #roll a{

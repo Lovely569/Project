@@ -1,6 +1,14 @@
-const button = getElementById("closeButt");
-const element = getElementById("header");
+const closeBtn = document.querySelector(".closeButt");
+const dropdownBtn = document.querySelector(".dropdown-btn");
+const header = document.querySelector("header");
 
-button.addEventListener("click", function()){
-    element.style.style.display ="none";
-}
+closeBtn.addEventListener("click", ()=> {
+    header.style.top = "-140px";
+    dropdownBtn.style.display = "block";
+});
+
+dropdownBtn.addEventListener("click", ()=> {
+    header.style.top = "0";
+    dropdownBtn.style.display = "none";
+})
+

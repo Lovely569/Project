@@ -2,23 +2,33 @@
 <head>
     <style>
         body{
-            width: 3000px;
-            height: 3000px;
-            display: flex;
+
 
         }
-        .test{
-            background-color: rosybrown;
-            width: 50px;
-            height: 50px;
-        }
+
+
 
     </style>
 </head>
 <body>
-    <div class="test">
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
+<!-----Day1----->
+    <p id="test">change me mommy</p>
+    <button type="button" onclick="document.getElementById('test').innerHTML = Date()">hello</button>
+<!------Day2------>
+    <img src="1.webp" alt="" id="pic" width="200px">
+    <button type="button" onclick="document.getElementById('pic').src='2.webp'">click me</button>
+
+        <h1 id="lala">hello</h1>
+    <button type="button" onclick="document.getElementById('lala').style.backgroundColor='black'">reddd</button>
+    <button type="button" onclick="document.getElementById('lala').style.display='none'"></button>
+
+    <p id="hello">moshi moshi</p>
+    <button type="button" onclick="document.getElementById('pic').innerText='no no'">replace</button>
+
+    <script>alert('hello');
+        console.log('hey');
+    </script>
+    <button type="button" onclick="window.print()">print me</button>
 
 </body>
 

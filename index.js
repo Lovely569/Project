@@ -12,11 +12,11 @@ dropdownBtn.addEventListener("click", ()=> {
     dropdownBtn.style.display = "none";
 })
 
-if (new Date().getHours()>=12){
+if (17>new Date().getHours()>=12){
 
     document.getElementById('goodME').innerHTML="Good Afternoon";
 }
-else if(new Date().getHours()>17){
+else if(new Date().getHours()>=17){
     document.getElementById('goodME').innerHTML="Good Evening";
 
 }
@@ -47,3 +47,4 @@ switch(date){
         day = "Sadderday";
 }
 document.getElementById('weekME').innerHTML=""+day;
+

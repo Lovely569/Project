@@ -127,3 +127,8 @@ header {
     border: 1px solid black;
     padding-top: 100px;
 }
+
+canvas {
+    border: 1px solid black;
+    background-color: antiquewhite;
+}

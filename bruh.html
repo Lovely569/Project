@@ -1,35 +1,67 @@
 <html>
-<head>
-    <style>
-        body{
+    <head>
+        <style>
+            body{
+                margin: 0px;
+                background-color: black;
+                color: white;
+            }
+            header{
+                background-color: pink;
+                padding: 20px;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            a{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p></p>
+        <header>
+            <h1>hello</h1>
+            <p>paragraph</p>
+            <div>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+            </div>
+        <p id="weekend"></p>
+        </header>
+            
+        <script>
+            let day;
+            let date = new Date().getDay();
+            switch(date){
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday Movie Night!";
+                    break;
+                case 6:
+                    day = "Thursday";
 
-
-        }
-
-
-
-    </style>
-</head>
-<body>
-<!-----Day1----->
-    <p id="test">change me mommy</p>
-    <button type="button" onclick="document.getElementById('test').innerHTML = Date()">hello</button>
-<!------Day2------>
-    <img src="1.webp" alt="" id="pic" width="200px">
-    <button type="button" onclick="document.getElementById('pic').src='2.webp'">click me</button>
-
-        <h1 id="lala">hello</h1>
-    <button type="button" onclick="document.getElementById('lala').style.backgroundColor='black'">reddd</button>
-    <button type="button" onclick="document.getElementById('lala').style.display='none'"></button>
-
-    <p id="hello">moshi moshi</p>
-    <button type="button" onclick="document.getElementById('pic').innerText='no no'">replace</button>
-
-    <script>alert('hello');
-        console.log('hey');
-    </script>
-    <button type="button" onclick="window.print()">print me</button>
-
-</body>
-
+            }
+            document.getElementById('weekend').innerHTML= ""+day;
+           
+        </script>
+    </body>
 </html>

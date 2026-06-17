@@ -25,15 +25,24 @@ header {
     background-image: linear-gradient(#c4569f,#bd4294);
     padding: 15px;
     position: fixed;
-    top: 0;
-    left: 0;
     right: 0;
+    left: 0;
+    top: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 10px;
     transition-duration: 0.5s;
 }
 
+#goodME{
+    font-size: 50px;
+ 
+}
+#weekME{
+    font-size: 50px;
+    color: #fbacf1;
+}
 
 #nav{
     display: flex;

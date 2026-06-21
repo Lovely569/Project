@@ -33,6 +33,7 @@ header {
     justify-content: space-between;
     gap: 10px;
     transition-duration: 0.5s;
+    z-index: 100;
 }
 
 #goodME{
@@ -70,7 +71,39 @@ header {
     bottom: -20px;
     transition-delay: 2s;
 }
+.closeAss, .openAss{
+    margin-top: 100px;
+    width: max-content;
+    padding: 5px 7px;
+    background-color: purple;
+    color: #f987eb;
+    border-color: #f987eb;
+    border-radius: 5px;
+    float: right;
+    position:absolute;
+    right: -20px;
+}
+.openAss{
+    display: none;
+    position: absolute;
 
+}
+
+#musicBby{
+text-align: left;
+top: 0;
+left: 0;
+width: 300px;
+background: #c4569f;
+height: 1000px;
+position: fixed;
+color: white;
+font-size: 30px;
+}
+#musicList{
+    padding-top: 100px;
+    padding-left: 10px;
+}
 .portfolios {
     margin-top: 130px;
     display: flex;

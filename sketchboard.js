@@ -1,6 +1,7 @@
 const canvas = document.querySelector("canvas");
 const undoBtn = document.querySelector(".undo-btn");
 const redoBtn = document.querySelector(".redo-btn");
+const clearBtn = document.querySelector(".clear-btn");
 const thicknessInput = document.querySelector(".brush-thickness");
 const colorInput = document.querySelector(".brush-color");
 
@@ -87,15 +88,24 @@ redoBtn.addEventListener("click", ()=> {
     }
 });
 
+clearBtn.addEventListener("click", ()=> {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    localStorage.removeItem("history");
+    history = [];
+})
+
 function drawFromHistory(){
-    //we need to get the png image from the history, based on our current index
-    let image = new Image();
-    image.src = history[currentStrokeIndex];
-    //when said image loads, we first clear the canvas, then draw that image
-    image.onload = ()=> {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.drawImage(image, 0, 0);
+    if(history.length != 0) {
+        let image = new Image();
+        image.src = history[currentStrokeIndex];
+        //when said image loads, we first clear the canvas, then draw that image
+        image.onload = ()=> {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(image, 0, 0);
+        }
     }
+    //we need to get the png image from the history, based on our current index
+    
 }
 
 

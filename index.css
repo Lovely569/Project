@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient( #fbacf1,#faa3f0,#f86de7) ;
+    background-image: radial-gradient(circle,#d68abd,#dd9ec8,#e5b5d5) ;
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
@@ -22,7 +22,7 @@ body{
 
 
 header {
-    background-image: linear-gradient(#c4569f,#bd4294);
+    background-image: radial-gradient(#ce72af,#ce72af);
     padding: 15px;
     position: fixed;
     right: 0;
@@ -34,6 +34,7 @@ header {
     gap: 10px;
     transition-duration: 0.5s;
     z-index: 100;
+    border: 2px solid black;
 }
 
 #goodME{
@@ -42,7 +43,7 @@ header {
 }
 #weekME{
     font-size: 50px;
-    color: #fbacf1;
+    color: #eecae2;
 }
 
 #nav{
@@ -50,7 +51,7 @@ header {
     justify-content: center;
 }
 #nav a{
-    background-color: #f987eb;
+    background-color: #eecae2;
     text-align: center;
     border-left: 2px solid black;
     padding: 5px;
@@ -59,7 +60,7 @@ header {
 .closeButt, .dropdown-btn {
     width: max-content;
     padding: 5px 7px;
-    background-color: purple;
+    background-color: #973576;
     color: #f987eb;
     border-color: #f987eb;
     border-radius: 5px;
@@ -75,9 +76,9 @@ header {
     margin-top: 100px;
     width: max-content;
     padding: 5px 7px;
-    background-color: purple;
-    color: #f987eb;
-    border-color: #f987eb;
+    background-color:#ce72af ;
+    color: #fdcff7;
+    border-color:#fdcff7;
     border-radius: 5px;
     float: right;
     position:absolute;
@@ -94,18 +95,25 @@ text-align: left;
 top: 0;
 left: -290px;
 width: 300px;
-background: #c4569f;
+background: #efb7fc83;
 height: 1000px;
 position: fixed;
-color: white;
+color: black;
 font-size: 30px;
 }
-#musicList{
-    padding-top: 100px;
-    padding-left: 10px;
+#musicBby h2{
+    text-align: center;
 }
+#musicList{
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 100%;
+    border: 3px solid black;
+}
+
 #musicList audio{
     width:270px;
+    height: 35px;
 }
 #portfolios {
     margin-top: 130px;

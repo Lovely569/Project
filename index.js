@@ -4,7 +4,7 @@ const dropdownBtn = document.querySelector(".dropdown-btn");
 const header = document.querySelector("header");
 
 closeBtn.addEventListener("click", ()=> {
-    header.style.top = "-95px";
+    header.style.top = "-99px";
     dropdownBtn.style.display = "block";
 });
 
@@ -23,7 +23,7 @@ openMu.addEventListener("click", ()=>{
 
 });
 closeMu.addEventListener("click", ()=> {
-    musicbby.style.left = "-290px";
+    musicbby.style.left = "-295px";
     closeMu.style.display = "none";
 });
 

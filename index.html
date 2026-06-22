@@ -106,11 +106,13 @@
         <section class="sketchboard-section">
             <h2>Leave something nice for a wifey</h2>
             <div class="tools">
-                <input type="color">
+                <label for="color"></label>
+                <input class="brush-color" type="color" name="color">
                 <label for="brush">Select brush thickness:</label>
                 <input class="brush-thickness" type="number" min="1" max="10" value="5" name="brush">
                 <button class="undo-btn">Undo</button>
                 <button class="redo-btn">Redo</button>
+                <button class="clear-btn">Clear</button>
             </div>
             
             <div class="sketchboard">

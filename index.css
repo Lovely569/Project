@@ -83,7 +83,7 @@ header {
     position:absolute;
     right: -20px;
 }
-.openAss{
+.closeAss{
     display: none;
     position: absolute;
 
@@ -92,7 +92,7 @@ header {
 #musicBby{
 text-align: left;
 top: 0;
-left: 0;
+left: -290px;
 width: 300px;
 background: #c4569f;
 height: 1000px;
@@ -104,7 +104,10 @@ font-size: 30px;
     padding-top: 100px;
     padding-left: 10px;
 }
-.portfolios {
+#musicList audio{
+    width:270px;
+}
+#portfolios {
     margin-top: 130px;
     display: flex;
     gap: 20px;
@@ -112,7 +115,7 @@ font-size: 30px;
     padding: 20px;
 }
 
-.portfolios section {
+#portfolios section {
     flex: 1;
 }
 

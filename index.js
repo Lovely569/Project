@@ -17,16 +17,16 @@ const closeMu = document.querySelector(".closeAss");
 const openMu = document.querySelector(".openAss");
 const musicbby = document.querySelector("#musicBby");
 
-
-closeMu.addEventListener("click", ()=> {
-    musicbby.style.left = "-290px";
-    openMu.style.display = "block";
-});
 openMu.addEventListener("click", ()=>{
     musicbby.style.left = "0";
-    openMu.style.display = "none";
+    closeMu.style.display = "block";
 
 });
+closeMu.addEventListener("click", ()=> {
+    musicbby.style.left = "-290px";
+    closeMu.style.display = "none";
+});
+
 
 //Hourssssss
 if(new Date().getHours()>0){

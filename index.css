@@ -81,26 +81,24 @@ header {
     border-color:#fdcff7;
     border-radius: 5px;
     float: right;
-    position:absolute;
+    position: absolute;
     right: -20px;
 }
 .closeAss{
     display: none;
-    position: absolute;
-
 }
 
 #musicBby{
-text-align: left;
-top: 0;
-left: -290px;
-width: 300px;
-background: #efb7fc83;
-height: 1000px;
-position: fixed;
-color: black;
-font-size: 30px;
+    text-align: left;
+    top: 0;
+    left: -290px;
+    width: 300px;
+    background: #efb7fc83;
+    position: fixed;
+    color: black;
+    font-size: 30px;
 }
+
 #musicBby h2{
     text-align: center;
 }
@@ -109,6 +107,8 @@ font-size: 30px;
     padding-left: 10px;
     padding-bottom: 100%;
     border: 3px solid black;
+    height: 100vh;
+    overflow: auto;
 }
 
 #musicList audio{

@@ -1,8 +1,9 @@
 const canvas = document.querySelector("canvas");
 const undoBtn = document.querySelector(".undo-btn");
 const redoBtn = document.querySelector(".redo-btn");
-const brushInput = document.querySelector(".brush-thickness");
-console.log(brushInput);
+const thicknessInput = document.querySelector(".brush-thickness");
+const colorInput = document.querySelector(".brush-color");
+
 
 //get 2d context
 var ctx = canvas.getContext('2d');
@@ -28,11 +29,19 @@ let currentStrokeIndex = -1;
 //until we press "undo", last and current indexes should stay the same (line 34)
 let lastStrokeIndex;
 
-let brushThickness = brushInput.value;
+let brushThickness = thicknessInput.value;
+let brushColor = colorInput.value;
 
-brushInput.addEventListener("change", ()=> {
-    brushThickness = brushInput.value;
+
+thicknessInput.addEventListener("change", ()=> {
+    brushThickness = thicknessInput.value;
 })
+
+colorInput.addEventListener("change", ()=> {
+    brushColor = colorInput.value;
+})
+
+
 
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mousedown', (e)=>{
@@ -111,6 +120,7 @@ function draw(e) {
   ctx.beginPath(); // begin
 
   ctx.lineWidth = brushThickness;
+  ctx.strokeStyle = brushColor;
   ctx.lineCap = 'round';
 
 

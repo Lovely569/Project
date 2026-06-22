@@ -17,21 +17,19 @@ let isPainting = false;
 
 //this is where we push a png image of our canvas every time we draw something new on it
 //think of it like an array of snapshots
-let history = [];
+let history = JSON.parse(localStorage.getItem("history")) || [];
+console.log(history);
 
 //this is to show where we are in history,
 //since our history is empty in the beginning, we start at -1
 //(the code will change soon, after we add the history to local storage,
 // meaning we wont start with empty history)
-let currentStrokeIndex = -1;
-
-//this is to show the last index in history 
-//until we press "undo", last and current indexes should stay the same (line 34)
-let lastStrokeIndex;
+let currentStrokeIndex = history.length - 1;
 
 let brushThickness = thicknessInput.value;
 let brushColor = colorInput.value;
 
+drawFromHistory();
 
 thicknessInput.addEventListener("change", ()=> {
     brushThickness = thicknessInput.value;
@@ -47,7 +45,6 @@ canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mousedown', (e)=>{
   isPainting = true;
   currentStrokeIndex++;
-  lastStrokeIndex = currentStrokeIndex;
   setPosition(e);
 });
 document.addEventListener('mouseup', ()=>{
@@ -62,7 +59,7 @@ document.addEventListener('mouseup', ()=>{
         if (currentStrokeIndex >= history.length) {
             
             history.push(document.querySelector("canvas").toDataURL());
-
+            localStorage.setItem("history", JSON.stringify(history));
         }
     }
  
@@ -81,12 +78,10 @@ undoBtn.addEventListener("click", ()=> {
     //if not, we draw
     else drawFromHistory();
   }
-
-  console.log(history.length);
 })
 
 redoBtn.addEventListener("click", ()=> {
-    if (currentStrokeIndex < lastStrokeIndex) {
+    if (currentStrokeIndex < history.length - 1) {
         currentStrokeIndex++;
         drawFromHistory();
     }
@@ -99,7 +94,7 @@ function drawFromHistory(){
     //when said image loads, we first clear the canvas, then draw that image
     image.onload = ()=> {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.drawImage(image, 0, 0)
+        ctx.drawImage(image, 0, 0);
     }
 }
 

@@ -12,7 +12,7 @@
         <div>
         <h1>Practice</h1>
         <div id="nav">
-            <a href="">Portos</a>
+            <a href="#portfolios">Portos</a>
             <a href="bruh.html" target="_blank">bruh</a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4
                 w9WgXcQ&start_radio=1&pp=ygUJcmljayByb2xsoAcB">rickroll</a>
@@ -21,16 +21,45 @@
         </div>
         </div>
 
-        <p id="goodME">Good Morning!</p>
+        <p id="goodME"></p>
         <p id="weekME">day</p>
 
         <button class="closeButt">&#x2715;</button>
-        <button class="dropdown-btn hidden">&#9660;</button>
+        <button class="dropdown-btn">&#9660;</button>
     </header>
-    <!---------------------Secret-------------------------->>
-            <a href="" alt="nu uh">pp</a>
-    <!--------------------------------------------PORTOFOLIOS------------------------------------->>
-        <section class="portfolios">  
+    <article id="musicBby">
+        <button  class="openAss">O</button>
+        <button  class="closeAss">X</button>
+        <br>
+        <br>
+        <div id="musicList">
+            <h2>Music List:</h2>
+            <hr>
+            <p>Addict</p>
+            <audio controls id="addicted">
+                <source src="audio/addict.mp3" type="audio/mpeg">
+                <source src="audio/addict.mp3" type="audio/ogg">
+            </audio>
+            
+            <p>No Scrub</p>
+            <audio controls id="noScrub">
+                <source src="audio/noScrub.mp3" type="audio/mpeg">
+                <source src="audio/noScrub.mp3" type="audio/ogg">
+            </audio >
+            <p>song 3</p>
+            <p>song 4</p>
+
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        
+
+    </article>
+    <!---------------------Secret-------------------------->
+            <a href="sad.html" alt="nu uh">sad</a>
+    <!--------------------------------------------PORTOFOLIOS------------------------------------->
+        <section id="portfolios">  
 
             <section class="ani-pf"> 
                 <h3>&#9733 Ani's Portfolio &#9733</h3>
@@ -69,31 +98,45 @@
                 </div>
                 <img class="pf-img" src="assets/quinn.jpg" alt="fuck you">
                 <br>
-
-                <audio controls id="addicted">
-                        <source src="audio/addict.mp3" type="audio/mpeg">
-                        <source src="audio/addict.mp3" type="audio/ogg">
-                </audio>
+                
                 <script>
-                    var audio = document.getElementById("addicted");
-                    audio.volume = 0.5;
+                    var audio1 = document.getElementById("addicted");
+                    var audio2 = document.getElementById("noScrub");
+                    audio1.volume = 0.5;
+                    audio2.volume = 0.5;
                 </script>
-        <!------------------------------------------Gallery---------------------------------------->
             </section>
         </section>
+
+        <!------------------------------------------Gallery---------------------------------------->
         <section class="sketchboard-section">
-            <h2>Leave a note for wifey</h2>
-            <input type="color">
+            <h2>Leave something nice for a wifey</h2>
+            <div class="tools">
+                <label for="color"></label>
+                <input class="brush-color" type="color" name="color">
+                <label for="brush">Select brush thickness:</label>
+                <input class="brush-thickness" type="number" min="1" max="10" value="5" name="brush">
+                <button class="undo-btn">Undo</button>
+                <button class="redo-btn">Redo</button>
+                <button class="clear-btn">Clear</button>
+            </div>
+            
             <div class="sketchboard">
                 <canvas></canvas>
             </div>
         </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <section class="gallery">
+
+
+        </section>
+
+
 
         <script src="index.js"></script>
         <script src="sketchboard.js"></script>
+
 </body>
 </html>
 

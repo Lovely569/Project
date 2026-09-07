@@ -1,9 +1,8 @@
+
+
 const undoBtn = document.querySelector(".undo");
 const canvas = document.querySelector("canvas");
 const imgParent = document.querySelector(".img-parent");
-
-// some hotfixes... ( ≖_≖)
-document.body.style.margin = 0;
 
 
 // get canvas 2D context and set him correct size

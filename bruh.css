@@ -1,7 +1,24 @@
+body{
+    background-color: aliceblue;
+    margin: 0px;
+}
+
 canvas {
     border: 1px solid black;
 }
 
 button {
     display: block;
+}
+header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fill;
+    height: 200px;
+    background-color: pink;
+    color: black;
+}
+.closeButt{
+    float: right;
 }
